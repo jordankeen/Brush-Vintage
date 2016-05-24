@@ -11,3 +11,4 @@ Tools used:
 - CSS3
 - JQUERY
 - SASS
+- Responsive Design
