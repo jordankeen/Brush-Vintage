@@ -9,6 +9,7 @@ Tools used:
 
 - HTML5
 - CSS3
-- JQUERY
 - SASS
 - Responsive Design
+
+April 2016

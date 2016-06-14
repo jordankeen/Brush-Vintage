@@ -539,6 +539,7 @@ nav {
 .port-item img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .port-item.item2 {
