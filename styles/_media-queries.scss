@@ -14,42 +14,34 @@
 		}
 	}
 }
-
 @media screen and (max-width: 870px) {
 	.nav-bar {
 		position: fixed;
 		top: 0;
-		right: 0;
-		height: 0%;
-		width: 170px;
+		right: -100%;
+		height: 100%;
+		width: 100%;
 		background: rgba(0, 0, 0, 0.70);
 		flex-direction: column-reverse;
 		justify-content: space-around;
 		align-items: center;
-		opacity: 0;
-		visibility: hidden;
 		padding: 70px 0;
 		margin: 0;
 		z-index: 20;
-		transition: all 0.5s ease-in-out;
+		transition: right 0.4s ease-out;
 		li {
 			list-style-type: none;
 			padding: 0;
 			a {
-				font-size: 12px;
+				font-size: 20px;
 			}
 		}
-	}
-	.search-icon {
-		display: none;
 	}
 	.hamburger {
 		display: inline-block;
 	}
 	.nav-bar.show {
-		opacity: 1;
-		visibility: visible;
-		height: 100%;
+		right: 0;
 	}
 	.hamburger.hide {
 		display: none;
@@ -60,8 +52,8 @@
 	.x-button {
 		display: block;
 		position: absolute;
-		top: 12px;
-		right: 25px;
+		top: 31px;
+		right: 23px;
 	}
 	.portfolio.wrapper {
 		flex-direction: row;
@@ -216,7 +208,7 @@
 	}
 	.history-button {
 		margin: 10px auto;
-	}
+	} 
 	.services-section {
 		padding-top: 0;
 	}
@@ -224,7 +216,8 @@
 		padding-bottom: 0;
 	}
 	.services-item {
-		min-width: 290px;
+		cursor: pointer;
+		min-width: 276px;
 		width: 80%;
 		padding: 20px 0;
 		margin: 0 auto;
@@ -251,10 +244,11 @@
 		}
 	}
 	.service-panel {
-		overflow: hidden;
-		transition: all 0.5s ease-in-out;
-		opacity: 0;
-		max-height: 0;
+		// overflow: hidden;
+		// transition: all 0.5s ease-in-out;
+		// opacity: 0;
+		// max-height: 0;
+		display: none;
 		padding: 8px 5px;
 	}
 	.service-panel.panel1.show,

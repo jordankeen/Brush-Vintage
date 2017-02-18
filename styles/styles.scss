@@ -39,7 +39,6 @@ header {
 	background: url(../images/second_header.jpg);
 	background-position: center;
 	background-size: cover;
-	max-width: 1600px;
 	margin: 0 auto;
 }
 .header-opacity {
@@ -47,10 +46,13 @@ header {
 }
 nav {
 	height: 70px;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 15px 24px 0;
 }
 .nav-image {
 	float: left;
-	margin: 12px 0 0 20px;
+	margin: 12px 0 0;
 	img {
 		height: 50px
 	}
@@ -71,6 +73,9 @@ nav {
 		&:last-child {
 			list-style-type: none;
 		}
+		&:nth-child(2) {
+			padding-right: 0;
+		}
 		a {
 			color: white;
 			text-decoration: none;
@@ -85,7 +90,7 @@ nav {
 }
 .x-button {
 	color: white;
-	font-size: 29px;
+	font-size: 34px;
 	display: none;
 	cursor: pointer;
 }
@@ -120,24 +125,17 @@ nav {
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
 }
-.search-icon {
-	color: white;
-	font-size: 15px;
-	float: right;
-	margin: 24px 30px 0 0;
-}
 .hamburger{
 	display: none;
 	position: relative;
-	z-index: 21;
 	cursor: pointer;
 	color: white;
 	font-size: 30px;
 	float: right;
-	margin: 13px 25px;
+	margin-top: 19px;
 }
 .header.wrapper {
-	padding: 85px 0 165px 0;
+	padding: 105px 0 165px 0;
 	text-align: center;
 }
 .header-image {
@@ -267,10 +265,10 @@ nav {
 		margin-top: 5px;
 	}
 	.fa-plus {
-		font-size: 18px;
+		font-size: 15px;
 		display: none;
 		margin-top: 5px;
-		padding: 5px;
+		padding: 7px;
 		cursor: pointer;
 	}
 }
@@ -363,7 +361,6 @@ nav {
 }
 /* Stats Section CSS */
 .stats-section {
-	max-width: 1600px;
 	background: url(../images/mountains_hero.jpeg);
 	background-size: cover;
 	background-position: center;
@@ -459,7 +456,6 @@ nav {
 }
 /* Newsletter SignUp CSS */
 .news-section {
-	max-width: 1600px;
 	margin: 0 auto;
 	padding: 35px 0;
 	background: rgba(212,210,210,.37);
@@ -523,7 +519,6 @@ nav {
 }
 /* Footer CSS */
 footer {
-	max-width: 1600px;
 	background: #292929;
 	padding: 65px 0;
 	margin: 0 auto;
@@ -646,9 +641,4 @@ footer {
 }
 /* Media Queries */
 @import 'media-queries';
-
-
-
-
-
 
